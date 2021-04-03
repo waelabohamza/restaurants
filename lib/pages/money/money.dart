@@ -78,6 +78,9 @@ class _BillState extends State<Bill> {
                 future: crud.writeData("bill", data),
                 builder: (BuildContext context, AsyncSnapshot snapshot) {
                   if (snapshot.hasData) {
+                     
+                     if(snapshot.data[0] == "faild") return Text("لا يوجد اي عملية حاليا ")  ;
+
                     return ListView.builder(
                         shrinkWrap: true,
                         physics: NeverScrollableScrollPhysics(),

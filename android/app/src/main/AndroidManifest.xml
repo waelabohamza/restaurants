@@ -14,7 +14,7 @@
    <application
         android:label="restaurants"
         android:usesCleartextTraffic="true" 
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <meta-data android:name="com.google.android.geo.API_KEY"
                android:value="AIzaSyDfv8bynd-akV_9fDKloFFLcQ1lMvQADGg"/>
         <activity
