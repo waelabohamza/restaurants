@@ -115,7 +115,6 @@ class _AddItemState extends State<AddItem> {
   // End
   @override
   void initState() {
-    // TODO: implement initState
     getprefs();
     getCatName();
     super.initState();
