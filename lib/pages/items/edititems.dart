@@ -56,9 +56,9 @@ class _EditItemState extends State<EditItem> {
   void _choosegallery() async {
     final myfile = await ImagePicker().getImage(
         source: ImageSource.gallery,
-        imageQuality: 50,
-        maxHeight: 400,
-        maxWidth: 400);
+        imageQuality: 80,
+        maxHeight: 1000,
+        maxWidth: 1000);
     // For Show Image Direct in Page Current witout Reload Page
     if (myfile != null)
       setState(() {
@@ -70,9 +70,9 @@ class _EditItemState extends State<EditItem> {
   void _choosecamera() async {
     final myfile = await ImagePicker().getImage(
         source: ImageSource.camera,
-        imageQuality: 50,
-        maxHeight: 400,
-        maxWidth: 400);
+        imageQuality: 80,
+        maxHeight: 1000,
+        maxWidth: 1000);
     // For Show Image Direct in Page Current witout Reload Page
     if (myfile != null)
       setState(() {
